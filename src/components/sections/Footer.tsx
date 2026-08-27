@@ -39,11 +39,14 @@ export default function Footer() {
         © 2026 {site.name}. Tous droits réservés.
       </p>
 
+      {/* Le filigrane est volontairement rogné par overflow-hidden : sa taille
+          suit celle du conteneur (x1,5 comme lui, dès que celui-ci atteint ses
+          900px) pour garder le même débordement de part et d'autre. */}
       <div
         aria-hidden="true"
-        className="mt-4 h-14 select-none overflow-hidden sm:h-20"
+        className="mt-4 h-14 select-none overflow-hidden sm:h-20 lg:h-[120px]"
       >
-        <p className="whitespace-nowrap text-center text-[17vw] font-bold leading-none tracking-tighter text-line sm:text-[104px]">
+        <p className="whitespace-nowrap text-center text-[17vw] font-bold leading-none tracking-tighter text-line sm:text-[104px] lg:text-[156px]">
           {site.footer.watermark}
         </p>
       </div>

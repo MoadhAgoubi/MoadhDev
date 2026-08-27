@@ -8,7 +8,7 @@ export default function About() {
       className="grid scroll-mt-10 gap-6 py-16 sm:grid-cols-[150px_1fr] sm:gap-10"
     >
       <SectionLabel>À propos</SectionLabel>
-      <div className="space-y-5 text-[14.5px] leading-relaxed text-soft">
+      <div className="max-w-[520px] space-y-5 text-[14.5px] leading-relaxed text-soft">
         {site.about.map((paragraph) => (
           <p key={paragraph.slice(0, 32)}>{paragraph}</p>
         ))}

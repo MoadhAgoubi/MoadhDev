@@ -9,24 +9,24 @@ import Stacks from "@/components/sections/Stacks";
 import Testimonials from "@/components/sections/Testimonials";
 import TrustedBy from "@/components/sections/TrustedBy";
 
+// Le padding vit sur l'enveloppe pleine largeur : le conteneur intérieur mesure
+// ainsi 900px de contenu réel, et non 900px moins les gouttières.
 export default function Home() {
   return (
-    <div className="min-h-screen px-3 py-3 sm:px-6 sm:py-10">
-      <div className="mx-auto w-full max-w-5xl border border-line bg-sheet px-5 sm:px-12">
-        <div className="mx-auto w-full max-w-[600px]">
-          <Header />
-          <main>
-            <Hero />
-            <TrustedBy />
-            <About />
-            <Achievements />
-            <Stacks />
-            <Experience />
-            <Projects />
-            <Testimonials />
-          </main>
-          <Footer />
-        </div>
+    <div className="min-h-screen bg-sheet px-6 py-3 sm:px-12 sm:py-10">
+      <div className="mx-auto w-full max-w-[900px]">
+        <Header />
+        <main>
+          <Hero />
+          <TrustedBy />
+          <About />
+          <Achievements />
+          <Stacks />
+          <Experience />
+          <Projects />
+          <Testimonials />
+        </main>
+        <Footer />
       </div>
     </div>
   );

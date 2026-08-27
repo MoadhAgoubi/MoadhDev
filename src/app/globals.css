@@ -5,6 +5,7 @@
   --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
   --font-script: var(--font-caveat), cursive;
 
+  /* paper : surface d'appoint (pastilles, aplats) — le fond de page est blanc */
   --color-paper: #f2f1ef;
   --color-sheet: #ffffff;
   --color-ink: #1c1c1c;
@@ -24,7 +25,7 @@
 }
 
 body {
-  background: var(--color-paper);
+  background: var(--color-sheet);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }

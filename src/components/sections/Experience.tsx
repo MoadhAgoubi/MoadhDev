@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="parcours" className="scroll-mt-10 py-12">
       <SectionLabel>Parcours</SectionLabel>
-      <ol className="mt-8 space-y-12 border-l border-line pl-8">
+      <ol className="mt-8 max-w-[540px] space-y-12 border-l border-line pl-8">
         {site.experience.map((item) => (
           <li key={item.period} className="relative">
             <span
