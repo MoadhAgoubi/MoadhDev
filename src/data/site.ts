@@ -160,7 +160,7 @@ export const site = {
       description:
         "Le site que vous lisez : Next.js 15, Tailwind CSS 4, design minimaliste et architecture par sections, pensée pour accueillir des widgets.",
       period: "2026",
-      href: "https://github.com/MoadhAgoubi",
+      href: "https://github.com/MoadhAgoubi/MoadhDev",
       linkLabel: "Code",
       live: true,
       tone: "stone",
